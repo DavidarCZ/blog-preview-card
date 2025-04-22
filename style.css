@@ -1,0 +1,115 @@
+/* Only placement in body */
+body {
+  background-color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: inherit;
+}
+
+/* Blog preview card */
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap");
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray500: hsl(0, 0%, 42%);
+  --gray950: hsl(0, 0%, 7%);
+  --font-family: "Figtree", sans-serif;
+  --font-weight-medium: 500;
+  --font-weight-bold: 800;
+}
+
+.blog-card-container {
+  background-color: var(--white);
+  border: 1px solid var(--gray950);
+  border-radius: 20px;
+  box-shadow: 7px 7px 0px black;
+  padding: 20px;
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+}
+.blog-card-image {
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.blog-card-tags {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.blog-card-tags > * {
+  background-color: var(--yellow);
+  font-weight: var(--font-weight-bold);
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.blog-card-date {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.blog-card-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-card-container h2 {
+  font-size: 20px;
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.blog-card-container h2:hover {
+  color: var(--yellow);
+}
+
+.blog-card-container p {
+  color: var(--gray500);
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-size: 16px;
+}
+
+.blog-card-author {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: var(--font-weight-bold);
+}
+.blog-card-author img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
